@@ -80,7 +80,7 @@
     
 
 
-    <link rel="stylesheet" href="gitbook/custom.css?v=3.2023.06.18.225621"><script async defer src="https://buttons.github.io/buttons.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ74P74K72"></script>
+    <link rel="stylesheet" href="gitbook/custom.css?v=3.2024.10.19.140454"><script async defer src="https://buttons.github.io/buttons.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ74P74K72"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -121,12 +121,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2">
+        <li class="chapter " data-level="1.2" data-path="CHANGELOG.html">
             
-                <a target="_blank" href="https://github.com/novalagung/dasarpemrogramangolang/raw/ebooks/dasarpemrogramangolang.pdf">
+                <a href="CHANGELOG.html">
             
                     
-                    Download versi PDF
+                    Version Changelogs &amp; Updates
             
                 </a>
             
@@ -134,7 +134,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="CONTRIBUTING.html">
+        <li class="chapter " data-level="1.3" data-path="download-ebook.html">
+            
+                <a href="download-ebook.html">
+            
+                    
+                    Download Ebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTRIBUTING.html">
             
                 <a href="CONTRIBUTING.html">
             
@@ -147,7 +160,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="DISTRIBUTION.html">
+        <li class="chapter " data-level="1.5" data-path="DISTRIBUTION.html">
             
                 <a href="DISTRIBUTION.html">
             
@@ -183,10 +196,10 @@
     
         <li class="chapter " data-level="2.1.1">
             
-                <a target="_blank" href="https://dasarpemrogramanrust.novalagung.com/">
+                <a target="_blank" href="https://dasarpemrogramanpython.novalagung.com/">
             
                     
-                    &#x1F4D6; Ebook: Dasar Pemrograman Rust
+                    &#x1F4D6; Dasar Pemrograman Python
             
                 </a>
             
@@ -196,10 +209,10 @@
     
         <li class="chapter " data-level="2.1.2">
             
-                <a target="_blank" href="https://learndevops.novalagung.com/">
+                <a target="_blank" href="https://dasarpemrogramanrust.novalagung.com/">
             
                     
-                    &#x1F4D6; Ebook: Learn DevOps
+                    &#x1F4D6; Dasar Pemrograman Rust
             
                 </a>
             
@@ -209,10 +222,23 @@
     
         <li class="chapter " data-level="2.1.3">
             
-                <a target="_blank" href="https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=FREE-202306">
+                <a target="_blank" href="https://howto.novalagung.com">
             
                     
-                    &#x25B6;&#xFE0F; Udemy Course: Belajar Docker &amp; Kubernetes (FREE Juni 2023)
+                    &#x1F4D6; How To
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4">
+            
+                <a target="_blank" href="https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/">
+            
+                    
+                    &#x25B6;&#xFE0F; Udemy Course: Belajar Docker &amp; Kubernetes
             
                 </a>
             
@@ -290,7 +316,7 @@
                 <a href="A-gopath-dan-workspace.html">
             
                     
-                    A.4. Setup GOPATH Dan Workspace
+                    A.4. Setup GOPATH dan Workspace
             
                 </a>
             
@@ -602,7 +628,7 @@
                 <a href="A-interface-kosong.html">
             
                     
-                    A.28. Interface Kosong (Any)
+                    A.28. Any / interface{} / Interface Kosong
             
                 </a>
             
@@ -823,7 +849,7 @@
                 <a href="A-regex.html">
             
                     
-                    A.45. Regex
+                    A.45. Regexp
             
                 </a>
             
@@ -1923,6 +1949,19 @@
             
         </li>
     
+        <li class="chapter " data-level="5.1.38" data-path="C-golang-aws-s3.html">
+            
+                <a href="C-golang-aws-s3.html">
+            
+                    
+                    C.38. AWS S3
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -2036,7 +2075,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="b15-ajax-json-response">B.15. AJAX JSON Response</h1>
-<p>Pada chapter sebelumnya, kita belajar cara untuk memproses request dengan payload bertipe JSON. Pada chapter ini kita akan belajar untuk membuat satu endpoint yang mengembalikan data JSON string.</p>
+<p>Kita telah belajar cara untuk memproses request dengan payload bertipe JSON di chapter sebelumnya. Pembelajaran kali ini masih tentang tipe data JSON tapi lebih fokus ke bagian back-end-nya, yaitu membuat sebuah Web Service API sederhana yang mengembalikan response berbentuk JSON.</p>
 <h2 id="b151-praktek">B.15.1. Praktek</h2>
 <p>Siapkan satu buah folder proyek baru, dengan satu buah file di dalamnya bernama <code>main.go</code>. Dalam file ini siapkan rute <code>/</code>.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">package</span> main
@@ -2052,7 +2091,7 @@
     http.ListenAndServe(<span class="hljs-string">&quot;:9000&quot;</span>, <span class="hljs-literal">nil</span>)
 }
 </code></pre>
-<p>Selanjutnya buat handler untuk rute <code>/</code>. Di dalam fungsi ini, data dummy ber-tipe slice object disiapkan. Data ini akan dikonversi ke JSON lalu dijadikan nilai balik endpoint <code>/</code>.</p>
+<p>Selanjutnya buat handler untuk rute <code>/</code>. Di dalam fungsi tersenit, disiapkan data dummy ber-tipe slice object. Data ini kemudian dikonversi ke JSON lalu dijadikan nilai balik endpoint <code>/</code>.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> ActionIndex(w http.ResponseWriter, r *http.Request) {
     data := [] <span class="hljs-keyword">struct</span> {
         Name <span class="hljs-keyword">string</span>
@@ -2074,20 +2113,19 @@
     w.Write(jsonInBytes)
 }
 </code></pre>
-<p>Cara mengkonversi data ke bentuk json cukup mudah, bisa menggunakan <code>json.Marshal()</code>. Fungsi ini mengembalikan dua nilai balik, data json (dalam bentuk <code>[]byte</code>) dan error jika ada. </p>
+<p>Cara mengkonversi data ke bentuk json cukup mudah, bisa menggunakan <code>json.Marshal()</code>. Fungsi ini mengembalikan dua nilai balik, data JSON dalam bentuk <code>[]byte</code>, dan error jika ada. </p>
 <blockquote>
 <p>Untuk mengambil bentuk string dari hasil konversi JSON, cukup lakukan casting pada data slice bytes tersebut. Contoh: <code>string(jsonInBytes)</code></p>
 </blockquote>
-<p>Karena nilai balik konversi sudah dalam bentuk bytes, maka langsung saja panggil method <code>Write()</code> milik <code>http.ResponseWriter</code> dan sisipkan data json sebagai argument pemanggilan method.</p>
+<p>Karena nilai balik konversi sudah dalam bentuk bytes, maka langsung saja panggil method <code>Write()</code> milik <code>http.ResponseWriter</code> untuk menjadikannya sebagai API response. Panggil method tersebut, kemudian sisipkan data JSON sebagai argument pemanggilan method.</p>
 <p>Jangan lupa juga untuk menambahkan response header <code>Content-Type: application/json</code>.</p>
 <h2 id="b152-testing">B.15.2. Testing</h2>
-<p>OK, semua sudah selesai, lakukan testing.</p>
+<p>OK, semua sudah selesai, jalankan program lalu test API-nya.</p>
 <p><img src="images/B_ajax_json_response_1_test.png" alt="Dasar Pemrograman Golang - Testing web server"></p>
 <h2 id="b153-json-response-menggunakan-jsonencoder">B.15.3. JSON Response menggunakan JSON.Encoder</h2>
-<p>Pada chapter sebelumnya sudah disinggung, bahwa lebih baik menggunakan <code>json.Decoder</code> jika ingin men-decode data yang sumbernya ada di stream <code>io.Reader</code></p>
-<p>Package json juga memiliki fungsi lain-nya yaitu <code>json.Encoder</code>, yang sangat cocok digunakan untuk meng-encode data menjadi JSON dengan tujuan objek langsung ke stream <code>io.Reader</code>. </p>
-<p>Karena tipe <code>http.ResponseWriter</code> adalah meng-embed <code>io.Reader</code>, maka jelasnya bisa kita terapkan penggunaan encoder di sini. </p>
-<p>Contohnya penerapannya sebagai berikut.</p>
+<p>Pada chapter sebelumnya telah disinggung bahwa lebih baik menggunakan <code>json.Decoder</code> jika ingin men-decode data yang sumbernya ada di stream <code>io.Reader</code></p>
+<p>Selain <code>json.Decoder</code>, ada juga <code>json.Encoder</code> yang penggunaannya adalah untuk meng-encode data menjadi JSON dengan output langsung disimpan ke stream <code>io.Reader</code>. </p>
+<p>Tipe <code>http.ResponseWriter</code> adalah meng-embed <code>io.Reader</code>, maka tipe tersebut bisa kita gunakan pada proses encoding menggunakan <code>json.Encoder</code>. Contoh penerapannya bisa dilihat berikut ini.</p>
 <pre><code class="lang-go">w.Header().Set(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
 
 err := json.NewEncoder(w).Encode(data)
@@ -2096,15 +2134,15 @@ err := json.NewEncoder(w).Encode(data)
     <span class="hljs-keyword">return</span>
 }
 </code></pre>
-<p>Kode di atas hasilnya ekuivalen dengan penggunaan <code>json.Marshal</code>.</p>
+<p>Kode di atas hasilnya ekuivalen dengan encoding data object ke JSON string menggunakan <code>json.Marshal()</code>.</p>
 <hr>
 <div class="source-code-link">
-    <div class="source-code-link-message">Source code praktek chapter ini tersedia di Github</div>
+    <div class="source-code-link-message">Source code praktik chapter ini tersedia di Github</div>
     <a href="https://github.com/novalagung/dasarpemrogramangolang-example/tree/master/chapter-B.15-ajax-json-response" target="_blank">https://github.com/novalagung/dasarpemrogramangolang-example/.../chapter-B.15...</a>
 </div>
 
 <hr>
-<iframe src="https://novalagung.substack.com/embed" width="100%" height="320" class="substack-embed" frameborder="0" scrolling="no"></iframe>
+<iframe src="partial/ebooks.html" width="100%" height="390px" frameborder="0" scrolling="no"></iframe>
 
                                 
                                 </section>
@@ -2132,7 +2170,7 @@ err := json.NewEncoder(w).Encode(data)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"B.15. AJAX JSON Response","level":"4.1.15","depth":2,"next":{"title":"B.16. AJAX Multiple File Upload","level":"4.1.16","depth":2,"path":"B-ajax-multi-upload.md","ref":"B-ajax-multi-upload.md","articles":[]},"previous":{"title":"B.14. AJAX JSON Payload","level":"4.1.14","depth":2,"path":"B-ajax-json-payload.md","ref":"B-ajax-json-payload.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","docsearch-v3","disqus","meta","sitemap"],"pluginsConfig":{"docsearch":{"appId":"ZV0MXP90GF","apiKey":"f7431c709385fe300da4c2ef2093c43c","indexName":"dasarpemrogramangolang-novalagung"},"disqus":{"useIdentifier":false,"shortName":"dasarpemrogramangolang"},"meta":{"name":"","content":"","data":[{"name":"google-site-verification","content":"UZnxS2Dk3fm2_Elms3a__56Q_oQ3sQ1h0SVXXlHSmbE"},{"name":"og:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"},{"name":"twitter:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"}]},"docsearch-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://dasarpemrogramangolang.novalagung.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"B-ajax-json-response.md","mtime":"2023-06-18T22:54:36.925Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-18T22:55:51.345Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"B.15. AJAX JSON Response","level":"4.1.15","depth":2,"next":{"title":"B.16. AJAX Multiple File Upload","level":"4.1.16","depth":2,"path":"B-ajax-multi-upload.md","ref":"B-ajax-multi-upload.md","articles":[]},"previous":{"title":"B.14. AJAX JSON Payload","level":"4.1.14","depth":2,"path":"B-ajax-json-payload.md","ref":"B-ajax-json-payload.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","docsearch-v3","disqus","meta","sitemap"],"pluginsConfig":{"docsearch":{"appId":"ZV0MXP90GF","apiKey":"f7431c709385fe300da4c2ef2093c43c","indexName":"dasarpemrogramangolang-novalagung"},"disqus":{"useIdentifier":false,"shortName":"dasarpemrogramangolang"},"meta":{"name":"","content":"","data":[{"name":"google-site-verification","content":"UZnxS2Dk3fm2_Elms3a__56Q_oQ3sQ1h0SVXXlHSmbE"},{"name":"og:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"},{"name":"twitter:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"}]},"docsearch-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://dasarpemrogramangolang.novalagung.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"B-ajax-json-response.md","mtime":"2024-10-19T14:03:37.761Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-19T14:04:34.757Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -2166,5 +2204,10 @@ err := json.NewEncoder(w).Encode(data)
         
     
 
-    <div style="position: fixed; top: 10px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);"><a class="github-button" href="https://github.com/novalagung/dasarpemrogramangolang" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star novalagung/dasarpemrogramangolang on GitHub">Star</a>&nbsp;<a class="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @novalagung on GitHub">Follow @novalagung</a><script async defer src="https://buttons.github.io/buttons.js"></script></div></body>
+    <div style="position: fixed; top: 10px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);">
+			<a class="github-button" href="https://github.com/sponsors/novalagung" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @novalagung on GitHub">Sponsor</a>&nbsp;
+			<a class="github-button" href="https://github.com/novalagung/dasarpemrogramangolang" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star novalagung/dasarpemrogramangolang on GitHub">Star</a>&nbsp;
+			<a class="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @novalagung on GitHub">Follow @novalagung</a>
+			<script async defer src="https://buttons.github.io/buttons.js"></script>
+		</div></body>
 </html>

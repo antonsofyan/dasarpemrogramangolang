@@ -80,7 +80,7 @@
     
 
 
-    <link rel="stylesheet" href="gitbook/custom.css?v=3.2023.06.18.225621"><script async defer src="https://buttons.github.io/buttons.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ74P74K72"></script>
+    <link rel="stylesheet" href="gitbook/custom.css?v=3.2024.10.19.140454"><script async defer src="https://buttons.github.io/buttons.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-MZ74P74K72"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -121,12 +121,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2">
+        <li class="chapter " data-level="1.2" data-path="CHANGELOG.html">
             
-                <a target="_blank" href="https://github.com/novalagung/dasarpemrogramangolang/raw/ebooks/dasarpemrogramangolang.pdf">
+                <a href="CHANGELOG.html">
             
                     
-                    Download versi PDF
+                    Version Changelogs &amp; Updates
             
                 </a>
             
@@ -134,7 +134,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="CONTRIBUTING.html">
+        <li class="chapter " data-level="1.3" data-path="download-ebook.html">
+            
+                <a href="download-ebook.html">
+            
+                    
+                    Download Ebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="CONTRIBUTING.html">
             
                 <a href="CONTRIBUTING.html">
             
@@ -147,7 +160,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="DISTRIBUTION.html">
+        <li class="chapter " data-level="1.5" data-path="DISTRIBUTION.html">
             
                 <a href="DISTRIBUTION.html">
             
@@ -183,10 +196,10 @@
     
         <li class="chapter " data-level="2.1.1">
             
-                <a target="_blank" href="https://dasarpemrogramanrust.novalagung.com/">
+                <a target="_blank" href="https://dasarpemrogramanpython.novalagung.com/">
             
                     
-                    &#x1F4D6; Ebook: Dasar Pemrograman Rust
+                    &#x1F4D6; Dasar Pemrograman Python
             
                 </a>
             
@@ -196,10 +209,10 @@
     
         <li class="chapter " data-level="2.1.2">
             
-                <a target="_blank" href="https://learndevops.novalagung.com/">
+                <a target="_blank" href="https://dasarpemrogramanrust.novalagung.com/">
             
                     
-                    &#x1F4D6; Ebook: Learn DevOps
+                    &#x1F4D6; Dasar Pemrograman Rust
             
                 </a>
             
@@ -209,10 +222,23 @@
     
         <li class="chapter " data-level="2.1.3">
             
-                <a target="_blank" href="https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=FREE-202306">
+                <a target="_blank" href="https://howto.novalagung.com">
             
                     
-                    &#x25B6;&#xFE0F; Udemy Course: Belajar Docker &amp; Kubernetes (FREE Juni 2023)
+                    &#x1F4D6; How To
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4">
+            
+                <a target="_blank" href="https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/">
+            
+                    
+                    &#x25B6;&#xFE0F; Udemy Course: Belajar Docker &amp; Kubernetes
             
                 </a>
             
@@ -290,7 +316,7 @@
                 <a href="A-gopath-dan-workspace.html">
             
                     
-                    A.4. Setup GOPATH Dan Workspace
+                    A.4. Setup GOPATH dan Workspace
             
                 </a>
             
@@ -602,7 +628,7 @@
                 <a href="A-interface-kosong.html">
             
                     
-                    A.28. Interface Kosong (Any)
+                    A.28. Any / interface{} / Interface Kosong
             
                 </a>
             
@@ -823,7 +849,7 @@
                 <a href="A-regex.html">
             
                     
-                    A.45. Regex
+                    A.45. Regexp
             
                 </a>
             
@@ -1923,6 +1949,19 @@
             
         </li>
     
+        <li class="chapter " data-level="5.1.38" data-path="C-golang-aws-s3.html">
+            
+                <a href="C-golang-aws-s3.html">
+            
+                    
+                    C.38. AWS S3
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -2036,10 +2075,9 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="a19-fungsi-multiple-return">A.19. Fungsi Multiple Return</h1>
-<p>Umumnya fungsi hanya memiliki satu buah nilai balik saja. Jika ada kebutuhan di mana data yang dikembalikan harus banyak, biasanya digunakanlah tipe seperti <code>map</code>, slice, atau <code>struct</code> sebagai nilai balik.</p>
-<p>Go menyediakan kapabilitas bagi programmer untuk membuat fungsi memiliki banyak nilai balik. Pada chapter ini akan dibahas bagaimana penerapannya.</p>
-<h2 id="a191-penerapan-fungsi-multiple-return">A.19.1 Penerapan Fungsi Multiple Return</h2>
-<p>Cara membuat fungsi yang memiliki banyak nilai balik tidaklah sulit. Tinggal tulis saja pada saat deklarasi fungsi semua tipe data nilai yang dikembalikan, dan pada keyword <code>return</code> tulis semua data yang ingin dikembalikan. Contoh bisa dilihat pada berikut.</p>
+<p>Di Go, suatu fungsi bisa saja mengembalikan nilai belik lebih dari 1 buah. Teknik ini bisa menjadi alternatif selain menggunakan tipe data kolektif seperti <code>map</code>, slice, atau <code>struct</code> sebagai nilai balik. Pada chapter ini kita akan belajar penerapannya.</p>
+<h2 id="a191-penerapan-fungsi-multiple-return">A.19.1. Penerapan Fungsi Multiple Return</h2>
+<p>Cara membuat fungsi agar memiliki banyak nilai balik tidaklah sulit, caranya pada saat deklarasi fungsi, tulis semua tipe data nilai balik yang ingin dikembalikan. Kemudian dalam body fungsi, pada penggunaan keyword <code>return</code>, tulis semua data yang ingin dikembalikan. Contoh:</p>
 <pre><code class="lang-go"><span class="hljs-keyword">package</span> main
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span>
@@ -2055,14 +2093,14 @@
     <span class="hljs-keyword">return</span> area, circumference
 }
 </code></pre>
-<p>Fungsi <code>calculate()</code> di atas menerima satu buah parameter (<code>diameter</code>) yang digunakan dalam proses perhitungan. Di dalam fungsi tersebut ada 2 hal yang dihitung, yaitu nilai <strong>luas</strong> dan <strong>keliling</strong>. Kedua nilai tersebut kemudian dijadikan sebagai return value fungsi.</p>
+<p>Fungsi <code>calculate()</code> di atas memiliki satu buah parameter yaitu <code>d</code> (diameter). Di dalam fungsi terdapat operasi perhitungan nilai <strong>luas</strong> dan <strong>keliling</strong> dari nilai <code>d</code>. Kedua hasilnya kemudian dijadikan sebagai return value.</p>
 <p>Cara pendefinisian banyak nilai balik bisa dilihat pada kode di atas, langsung tulis tipe data semua nilai balik dipisah tanda koma, lalu ditambahkan kurung di antaranya.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> calculate(d <span class="hljs-keyword">float64</span>) (<span class="hljs-keyword">float64</span>, <span class="hljs-keyword">float64</span>)
 </code></pre>
 <p>Tak lupa di bagian penulisan keyword <code>return</code> harus dituliskan juga semua data yang dijadikan nilai balik (dengan pemisah tanda koma).</p>
 <pre><code class="lang-go"><span class="hljs-keyword">return</span> area, circumference
 </code></pre>
-<p>Implementasi dari fungsi <code>calculate()</code> di atas, bisa dilihat pada kode berikut.</p>
+<p>Sekarang, coba panggil fungsi <code>calculate()</code> yang sudah dibuat untuk mencari nilai luas dan keliling dari suatu diameter.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> main() {
     <span class="hljs-keyword">var</span> diameter <span class="hljs-keyword">float64</span> = <span class="hljs-number">15</span>
     <span class="hljs-keyword">var</span> area, circumference = calculate(diameter)
@@ -2073,10 +2111,10 @@
 </code></pre>
 <p>Output program:</p>
 <p><img src="images/A_fungsi_multiple_return_1_multiple_return.png" alt="Dasar Pemrograman Golang - Penerapan teknik multiple return"></p>
-<p>Karena fungsi tersebut memiliki banyak nilai balik, maka pada pemanggilannya harus disiapkan juga banyak variabel untuk menampung nilai kembalian yang ada (sesuai jumlah nilai balik fungsi).</p>
+<p>Fungsi <code>calculate()</code> memiliki banyak nilai balik, maka dalam pemanggilannya harus disiapkan juga sejumlah variabel untuk menampung nilai balik fungsi (sesuai dengan jumlah nilai balik yang dideklarasikan).</p>
 <pre><code class="lang-go"><span class="hljs-keyword">var</span> area, circumference = calculate(diameter)
 </code></pre>
-<h2 id="a192-fungsi-dengan-predefined-return-value">A.19.2 Fungsi Dengan Predefined Return Value</h2>
+<h2 id="a192-fungsi-dengan-predefined-return-value">A.19.2. Fungsi Dengan Predefined Return Value</h2>
 <p>Keunikan lainnya yang jarang ditemui di bahasa lain adalah, di Go variabel yang digunakan sebagai nilai balik bisa didefinisikan di awal.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> calculate(d <span class="hljs-keyword">float64</span>) (area <span class="hljs-keyword">float64</span>, circumference <span class="hljs-keyword">float64</span>) {
     area = math.Pi * math.Pow(d / <span class="hljs-number">2</span>, <span class="hljs-number">2</span>)
@@ -2090,20 +2128,20 @@
 </code></pre>
 <p>Fungsi dideklarasikan memiliki 2 buah tipe data, dan variabel yang nantinya dijadikan nilai balik juga dideklarasikan. Variabel <code>area</code> yang bertipe <code>float64</code>, dan <code>circumference</code> bertipe <code>float64</code>.</p>
 <p>Karena variabel nilai balik sudah ditentukan di awal, untuk mengembalikan nilai cukup dengan memanggil <code>return</code> tanpa perlu diikuti variabel apapun. Nilai terakhir <code>area</code> dan <code>circumference</code> sebelum pemanggilan keyword <code>return</code> adalah hasil dari fungsi di atas.</p>
-<hr>
-<p>Ada beberapa hal baru dari kode di atas yang perlu dibahas, seperti <code>math.Pow()</code> dan <code>math.Pi</code>. Berikut adalah penjelasannya.</p>
-<h4 id="penggunaan-fungsi-mathpow">&#x2022; Penggunaan Fungsi <code>math.Pow()</code></h4>
-<p>Fungsi <code>math.Pow()</code> digunakan untuk memangkat nilai. <code>math.Pow(2, 3)</code> berarti 2 pangkat 3, hasilnya 8. Fungsi ini berada dalam package <code>math</code>.</p>
-<h4 id="penggunaan-konstanta-mathpi">&#x2022; Penggunaan Konstanta <code>math.Pi</code></h4>
+<h2 id="a193-penjelasan-tambahan">A.19.3. Penjelasan tambahan</h2>
+<p>Ada beberapa hal baru dari kode di atas yang perlu dibahas, diantaranya <code>math.Pow()</code> dan <code>math.Pi</code>.</p>
+<h4 id="&#x25C9;-penggunaan-fungsi-mathpow">&#x25C9; Penggunaan Fungsi <code>math.Pow()</code></h4>
+<p>Fungsi <code>math.Pow()</code> digunakan untuk operasi pangkat nilai. <code>math.Pow(2, 3)</code> berarti 2 pangkat 3, hasilnya 8. Fungsi ini berada dalam package <code>math</code>.</p>
+<h4 id="&#x25C9;-penggunaan-konstanta-mathpi">&#x25C9; Penggunaan Konstanta <code>math.Pi</code></h4>
 <p><code>math.Pi</code> adalah konstanta bawaan <code>package math</code> yang merepresentasikan <strong>Pi</strong> atau <strong>22/7</strong>.</p>
 <hr>
 <div class="source-code-link">
-    <div class="source-code-link-message">Source code praktek chapter ini tersedia di Github</div>
+    <div class="source-code-link-message">Source code praktik chapter ini tersedia di Github</div>
     <a href="https://github.com/novalagung/dasarpemrogramangolang-example/tree/master/chapter-A.19-fungsi-multiple-return" target="_blank">https://github.com/novalagung/dasarpemrogramangolang-example/.../chapter-A.19...</a>
 </div>
 
 <hr>
-<iframe src="https://novalagung.substack.com/embed" width="100%" height="320" class="substack-embed" frameborder="0" scrolling="no"></iframe>
+<iframe src="partial/ebooks.html" width="100%" height="390px" frameborder="0" scrolling="no"></iframe>
 
                                 
                                 </section>
@@ -2131,7 +2169,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"A.19. Fungsi Multiple Return","level":"3.1.19","depth":2,"next":{"title":"A.20. Fungsi Variadic","level":"3.1.20","depth":2,"path":"A-fungsi-variadic.md","ref":"A-fungsi-variadic.md","articles":[]},"previous":{"title":"A.18. Fungsi","level":"3.1.18","depth":2,"path":"A-fungsi.md","ref":"A-fungsi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","docsearch-v3","disqus","meta","sitemap"],"pluginsConfig":{"docsearch":{"appId":"ZV0MXP90GF","apiKey":"f7431c709385fe300da4c2ef2093c43c","indexName":"dasarpemrogramangolang-novalagung"},"disqus":{"useIdentifier":false,"shortName":"dasarpemrogramangolang"},"meta":{"name":"","content":"","data":[{"name":"google-site-verification","content":"UZnxS2Dk3fm2_Elms3a__56Q_oQ3sQ1h0SVXXlHSmbE"},{"name":"og:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"},{"name":"twitter:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"}]},"docsearch-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://dasarpemrogramangolang.novalagung.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"A-fungsi-multiple-return.md","mtime":"2023-06-18T22:54:36.925Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-18T22:55:51.345Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"A.19. Fungsi Multiple Return","level":"3.1.19","depth":2,"next":{"title":"A.20. Fungsi Variadic","level":"3.1.20","depth":2,"path":"A-fungsi-variadic.md","ref":"A-fungsi-variadic.md","articles":[]},"previous":{"title":"A.18. Fungsi","level":"3.1.18","depth":2,"path":"A-fungsi.md","ref":"A-fungsi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","docsearch-v3","disqus","meta","sitemap"],"pluginsConfig":{"docsearch":{"appId":"ZV0MXP90GF","apiKey":"f7431c709385fe300da4c2ef2093c43c","indexName":"dasarpemrogramangolang-novalagung"},"disqus":{"useIdentifier":false,"shortName":"dasarpemrogramangolang"},"meta":{"name":"","content":"","data":[{"name":"google-site-verification","content":"UZnxS2Dk3fm2_Elms3a__56Q_oQ3sQ1h0SVXXlHSmbE"},{"name":"og:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"},{"name":"twitter:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"}]},"docsearch-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://dasarpemrogramangolang.novalagung.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"A-fungsi-multiple-return.md","mtime":"2024-10-19T14:03:37.757Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-19T14:04:34.757Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -2165,5 +2203,10 @@
         
     
 
-    <div style="position: fixed; top: 10px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);"><a class="github-button" href="https://github.com/novalagung/dasarpemrogramangolang" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star novalagung/dasarpemrogramangolang on GitHub">Star</a>&nbsp;<a class="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @novalagung on GitHub">Follow @novalagung</a><script async defer src="https://buttons.github.io/buttons.js"></script></div></body>
+    <div style="position: fixed; top: 10px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);">
+			<a class="github-button" href="https://github.com/sponsors/novalagung" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @novalagung on GitHub">Sponsor</a>&nbsp;
+			<a class="github-button" href="https://github.com/novalagung/dasarpemrogramangolang" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star novalagung/dasarpemrogramangolang on GitHub">Star</a>&nbsp;
+			<a class="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @novalagung on GitHub">Follow @novalagung</a>
+			<script async defer src="https://buttons.github.io/buttons.js"></script>
+		</div></body>
 </html>
